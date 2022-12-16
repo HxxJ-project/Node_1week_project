@@ -62,7 +62,7 @@ router.delete("/comments/:postsId", async (req, res) => {
 });
 
 // 7. 댓글 작성
-const Comments = require("../schemas/Comment.js");
+const Comments = require("../schemas/comment.js");
 router.post("/comments/:postsId", async (req, res) => {
   const { postsId } = req.params;
   const { commentsId, password, name, createdAt, commentsTxt } = req.body;
